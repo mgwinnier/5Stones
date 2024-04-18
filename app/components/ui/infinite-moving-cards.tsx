@@ -43,11 +43,12 @@ export const InfiniteMovingCards = ({
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
       scrollerContent.forEach((item, index) => {
-        const duplicatedItem = item.cloneNode(true);
+        // Assert that the cloned node is an HTMLElement
+        const duplicatedItem = item.cloneNode(true) as HTMLElement;
         duplicatedItem.id = `clone-${index}`; // Assign unique ID or key for cloned items
         scrollerRef.current?.appendChild(duplicatedItem);
       });
-
+  
       getDirection();
       getSpeed();
       setStart(true);
