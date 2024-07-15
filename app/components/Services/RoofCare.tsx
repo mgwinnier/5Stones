@@ -36,8 +36,8 @@ const RoofCare: React.FC = () => {
           </p>
           <div className="text-center mt-8">
             <Link
-              href="/contact-us"
-              className="bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-red-700 transition duration-300">
+              href="/contact"
+              className="bg-black text-white px-6 py-3 rounded-lg shadow-lg hover:bg-red-700 transition duration-300">
               
                 Contact Us for a Free Consultation
               
