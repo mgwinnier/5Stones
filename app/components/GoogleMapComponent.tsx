@@ -1,5 +1,4 @@
-// GoogleMapComponent.tsx
-'use client'
+'use client';
 import React from 'react';
 import { GoogleMap, LoadScript, Polygon, useJsApiLoader } from '@react-google-maps/api';
 
@@ -8,8 +7,8 @@ interface Props {
 }
 
 const containerStyle = {
-  width: '600px',
-  height: '400px'
+  width: '100%',
+  height: '100%'
 };
 
 const kmlCoordinates = `
@@ -43,7 +42,7 @@ const GoogleMapComponent: React.FC<Props> = ({ apiKey }) => {
   }
 
   return (
-    <div>
+    <div className="w-full h-full">
       <GoogleMap
         mapContainerStyle={containerStyle}
         onLoad={onLoad}

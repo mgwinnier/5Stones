@@ -7,18 +7,19 @@ import { InfiniteMovingCardsDemo } from './components/cards'; // Adjust this pat
 import AboutSection from './components/AboutSection'
 import ContactUsComponent from './components/contact';
 import Footer from './components/footer';
+import Link from 'next/link'
 
-export default function Home() {
+
+const Home = () => {
   return (
-    <main>
-      <Navbar /> {/* Passing isHome prop */}
+    <>
       <Hero />
       <ValueCard />
       <AboutSection />
-      <InfiniteMovingCardsDemo /> {/* Infinite Moving Cards Demo Component */}
+      <InfiniteMovingCardsDemo />
       <ContactUsComponent />
-      <Footer />
-      {/* The rest of your home page content */}
-    </main>
+    </>
   );
-}
+};
+
+export default Home;

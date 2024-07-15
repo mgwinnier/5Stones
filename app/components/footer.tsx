@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center mb-4">
         {/* Logo and Company Name on the left */}
         <div className="flex justify-center md:justify-start mb-4 md:mb-0">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center" legacyBehavior>
 
             <Image
               src="/assets/logo.png"
